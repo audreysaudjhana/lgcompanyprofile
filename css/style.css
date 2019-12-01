@@ -19,7 +19,8 @@ nav {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 1000;
   padding: 0 100px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  font-size: 1.15em; 
 }
 img#logo {
   float: left;
@@ -87,4 +88,8 @@ nav ul li a:hover:before{
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+
+.col-md-6 {
+  padding: 0;
 }
