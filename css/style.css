@@ -216,3 +216,6 @@ i {
 i:hover{
   color: #db0959;
 }
+#overview01:hover{
+  width: 100%;
+}
