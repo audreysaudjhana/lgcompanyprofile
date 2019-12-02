@@ -216,6 +216,9 @@ i {
 i:hover{
   color: #db0959;
 }
-#overview01:hover{
-  width: 100%;
+#lg-way{
+  background: #FFFFFF;
+  width: 101%;
+  padding-top: 0.5%;
+  margin-bottom: 5%;
 }
