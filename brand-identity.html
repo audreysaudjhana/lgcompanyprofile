@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fontawesome/css/all.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="shortcut icon" href="img/icon-logo.png">
+	<title>LG Electronics</title>
+</head>
+
+<script src="js/bootstrap.min.js"></script>
+<body>
+
+<nav>
+	<img id="logo" src="img/header-logo.png">
+	<ul>
+		<li><a href="#our-brand">Our Brand</a></li>
+		<li><a href="#brand-identity">Brand Identity</a></li>
+		<li><a href="#newsroom">Newsroom</a></li>
+	</ul>
+</nav>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/lg-1.jpg"></div>
+      <div class="swiper-slide"><img src="img/lg-2.jpg"></div>
+      <div class="swiper-slide"><img src="img/lg-3.jpg"></div>
+    </div>
+    
+    <div class="swiper-pagination"></div>
+    
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+<div class="row" id="about-lg">
+	<div class="col-md-12">
+		<h3 data-aos-offset="100" data-aos-delay="50" data-aos-duration="1200" data-aos="fade"><strong>BRAND IDENTITY</strong></h3><br/>
+		<h1 data-aos-offset="100" data-aos-delay="50" data-aos-duration="1200" data-aos="fade-right">LG is the brand that is Delightfully Smart. "Life's Good" slogan, and futuristic logo are a great representation of what we stand for.</h1><br/>
+		<h4 data-aos-offset="100" data-aos-delay="50" data-aos-duration="1200" data-aos="fade-left">Global, Tomorrow, Energy, Humanity and Technology are the pillars that this corporation is founded on; with the capital letters L and G positioned inside a circle to center our ideals above all else, humanity. The symbol mark stands for our resolve to establish a lasting relationship with, and to achieve the highest satisfaction for our customers.</h4>
+	</div>
+</div>
+
+<div class="row" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000" data-aos="fade-up">
+	<div class="col-md-6">
+		<div class="image-box" id="logo">
+			<img src="img/logo-detail.jpg" width="75%" height="auto" style="margin-left: 15%;">
+		</div>
+	</div>
+	<div class="col-md-6">
+		<h2>Our Logo</h2><br/>
+		<p>The letters "L" and "G" in a circle symbolize the world, future, youth, humanity, and technology. Our philosophy is based on Humanity. Also, it represents LG's efforts to keep close relationships with our customers around the world.<br/><br/>
+		The symbol mark consists of two elements: the LG logo in LG Grey and the stylized image of a human face in the unique LG Red color. Red, the main color, represents our friendliness, and also gives a strong impression of LG's commitment to deliver the best. Therefore, the shape or the color of this symbol mark must never be changed.<br/><br/></p>
+	</div>
+</div>
+
+<div class="row" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000" data-aos="fade-up">
+	<div class="col-md-6">
+		<div class="image-box" id="logo">
+			<img src="img/logo-type-3d.png" width="30%" height="auto" style="margin-left: 20%; padding: 5% 0;">
+			<img src="img/logo-type-2d.png" width="30%" height="auto" style="margin-left: 5%; padding: 5% 0;">
+		</div>
+	</div>
+	<div class="col-md-6">
+		<p><br/>We have two versions of our logo : Corporate Logo and 3D Logo.<br/><br/>
+		The updated 3D Logo retains the heritage and equity of the Corporate Logo, while aligning with our new positioning.<br/><br/>
+		It was redrawn to strengthen the visual impact of our symbol mark and help communicate our attributes.</p>
+	</div>
+</div>
+
+<div id="footer">
+	<div id="copyright">
+		<h6>LG Electronics 2019 | Copyright © Audrey Saudjhana</h6>
+	</div>
+	<div id="social-media-text">
+		<h6>Keep updated with following our social media</h6>
+	</div>
+	<div id="social-media">
+		<a href="https://www.facebook.com/LGUSA/" target="_blank"><i class="fab fa-2x fa-facebook"></i></a>
+		<a href="https://twitter.com/LGUS/" target="_blank"><i class="fab fa-2x fa-twitter"></i></a>
+		<a href="https://www.youtube.com/channel/UC2SIWgqcys7Gcb6JxsFTm1Q" target="_blank"><i class="fab fa-2x fa-youtube"></i></a>
+	</div>
+</div>
+
+<script src="js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+ 	AOS.init();
+</script>
+
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 70
+      }, 900, function(){
+        location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+</body>
+</html>
