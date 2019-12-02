@@ -89,7 +89,65 @@ nav ul li a:hover:before{
   -webkit-align-items: center;
   align-items: center;
 }
-
-.col-md-6 {
-  padding: 0;
+.no-gutter > [class*='col-md-6'] {
+  padding-right:0;
+  padding-left:0;
+}
+.row {
+  width: 100%;
+  padding-top: 70px;
+  margin-top: -70px;
+}
+#about-lg{
+  text-align: center;
+  padding: 10% 5%;
+  margin: 0;
+}
+#brand-indentity {
+  margin: 0;
+}
+h2{
+  margin-left: 5%;
+  padding-top: 5%;
+}
+p {
+  font-size: 1.25em;
+  margin-left: 5%;
+}
+.image-box {
+  position: relative;
+  overflow: hidden;
+  width: 104%;
+}
+.row img:hover{
+  transform: scale(1.2);
+  transition: 900ms;
+  overflow: hidden;
+}
+#footer{
+  background-color: #383838;
+  color: #FFFFFF; 
+  padding: 1.5%;
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#copyright{
+  width: 50%;
+}
+#social-media-text{
+  width: 40%;
+  text-align: right;
+}
+#social-media{
+  width: 10%;
+  text-align: right;
+}
+i {
+  color: #FFFFFF;
+  padding: 0 3%;
+}
+i:hover{
+  color: #db0959;
 }

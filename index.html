@@ -3,7 +3,6 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
@@ -24,7 +23,7 @@
 	<ul>
 		<li><a href="#our-brand">Our Brand</a></li>
 		<li><a href="#brand-identity">Brand Identity</a></li>
-		<li><a href="#mewsroom">Newsroom</a></li>
+		<li><a href="#newsroom">Newsroom</a></li>
 	</ul>
 </nav>
 
@@ -41,13 +40,60 @@
     <div class="swiper-button-prev"></div>
   </div>
 
-<div class="row" id="our-brand">
+<div class="row" id="about-lg" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1200" data-aos="fade">
+	<div class="col-md-12">
+		<h1>About LG</h1>
+		<h4>We wish to mantain our hard-earned reputation for bringing added value to the lives of consumers.</h4>
+	</div>
+</div>
+
+<div class="row" id="our-brand" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos="fade-up">
 	<div class="col-md-6">
-		<img src="img/our-brand.jpg">
+		<div class="image-box">
+			<img src="img/our-brand.jpg" width="104.5%" height="auto">
+		</div>
 	</div>
 	<div class="col-md-6">
-		<h1>Our Brand</h1>
+		<h2>Our Brand</h2>
 		<p>Enhancing your life with LG's products comes with great values, benefits, promise and personality.</p>
+	</div>
+</div>
+
+<div class="row" id="brand-identity" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos="fade-up">
+	<div class="col-md-6" style="margin-left: -1px;">
+		<h2>Brand Identity</h2>
+		<p>"Life's Good" slogan, and futuristic logo are a great representation of what we stand for.</p>
+	</div>
+	<div class="col-md-6">
+		<div class="image-box">
+			<img src="img/brand-identity.jpg" width="104.5%" height="auto">
+		</div>
+	</div>
+</div>
+
+<div class="row" id="newsroom" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos="fade-up">
+	<div class="col-md-6">
+		<div class="image-box">
+			<img src="img/newsroom.jpg" width="104.5%" height="auto">
+		</div>
+	</div>
+	<div class="col-md-6">
+		<h2>Newsroom</h2>
+		<p>It's a place where you can see our latest innovations. See the latest videos and stay updated with LG.</p>
+	</div>
+</div>
+
+<div id="footer">
+	<div id="copyright">
+		<h6>LG Electronics 2019 | Copyright © Audrey Saudjhana</h6>
+	</div>
+	<div id="social-media-text">
+		<h6>Keep updated with following our social media</h6>
+	</div>
+	<div id="social-media">
+		<a href="https://www.facebook.com/LGUSA/" target="_blank"><i class="fab fa-2x fa-facebook"></i></a>
+		<a href="https://twitter.com/LGUS/" target="_blank"><i class="fab fa-2x fa-twitter"></i></a>
+		<a href="https://www.youtube.com/channel/UC2SIWgqcys7Gcb6JxsFTm1Q" target="_blank"><i class="fab fa-2x fa-youtube"></i></a>
 	</div>
 </div>
 
@@ -74,8 +120,25 @@
   </script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
- 		<script>
-    		AOS.init();
- 		</script>
+
+<script>
+ 	AOS.init();
+</script>
+
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 70
+      }, 900, function(){
+        location.hash = hash;
+      });
+    }
+  });
+});
+</script>
 </body>
 </html>
